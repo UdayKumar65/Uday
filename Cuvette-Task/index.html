@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        *{
+    margin: 0;
+    padding:0;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    }
+
+    body{
+    background: #e5e5e7;
+    }
+
+   .wrapper{
+    display: flex;
+
+   }
+   
+    nav{
+    width:95px;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    }
+    nav:hover{
+        width:290px;
+    }
+   .navbar{
+    padding: 1rem;
+    position: fixed;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+   }
+   .logo{
+    display:flex;
+    align-items: center;
+    padding:0.5rem;
+    overflow:hidden;
+    margin-bottom: 2rem;
+   }
+   .logo, img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+   }
+   .logo, span{
+    font-size: 18px;
+    color:rgb(57, 207, 94);
+    font-weight: bold;
+    text-transform: uppercase;
+   }
+   .navbar, a{
+    display:flex;
+    align-items: center;
+    padding:10px;
+    color: rgb(39,39,39);
+    font-weight: 500;
+    overflow: hidden;
+   }
+   .navbar, i{
+    font-size:1.2rem;
+    color:rgb(104,103,103);
+    margin:0 1.8rem 0 0.3rem;
+   }
+   .navbar, a:hover{
+    background-color: rgb(238,237,237);
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+   }
+   .logout{
+    position:absolute;
+    bottom:20px;
+   }
+   .logout, i{
+    padding-right:1rem;
+   }
+   #anil, #columnchart_values{
+    padding-left: 100px;
+    margin-top:auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+   }
+   #num, #barchart_values{
+    padding-left: 100px;
+    margin-top:auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+   }
+   
+  
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="guitar.png">
+                    <span>Guitar</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-star"></i>Unique_Plays</a>
+                <a href="#"><i class="fa-solid  fa-star"></i>Completion_rate</a>
+                <a href="#"><i class="fa-solid fa-spinner"></i>Total_Plays</a>
+            </div>
+        </nav>
+        <script src="./chart.js"></script>
+        <div id="anil">
+            <div id="columnchart_values" style="width: 300px; height: 300px;"></div>
+        </div>
+        <script src="./bar.js"></script>
+        <div id="num">
+            <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+        </div><script src="./total.js"></script>
+        <div id="car">
+            <script src="./bar.js"></script>
+        
+        
+        
+        
+        
+        
+</body>
+</body>
+</html>
